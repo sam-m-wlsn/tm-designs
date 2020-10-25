@@ -38,6 +38,11 @@ function styles() {
     .pipe(reload({stream: true}));
 }
 
+function build(cb) {
+  parallel(markup, scripts, styles);
+  cb();
+}
+
 function serve(cb) {
   parallel(build);
 
@@ -52,5 +57,5 @@ function serve(cb) {
 }
 
 exports.serve = serve;
-exports.build = parallel(markup, scripts, styles);
+exports.build = build;
 exports.default = serve;
