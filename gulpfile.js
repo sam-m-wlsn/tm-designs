@@ -52,7 +52,7 @@ function serve(cb) {
 
   watch(paths.src.styles, styles);
   watch(paths.src.scripts, scripts);
-  watch(paths.src.markup).on('change', reload);
+  watch(paths.src.markup, markup).on('change', reload);
   cb();
 }
 
