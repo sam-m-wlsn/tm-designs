@@ -1,0 +1,19 @@
+#main-menu {
+  flex: 1 1 auto;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  &__item {
+    height: 45px;
+  }
+
+  &__link {
+    display: block;
+    padding: 15px 45px;
+    font-size: 1.2em;
+  }
+}

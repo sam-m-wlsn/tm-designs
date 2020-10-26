@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+}
+
+#scaffolding {
+  display: grid;
+  width: 100vw;
+  margin: 15px auto;
+  height: 100%;
+
+  grid-template-columns: auto;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas: "header" "content";
+
+  grid-gap: 15px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+#header {
+  grid-area: header;
+}
+
+#content {
+  grid-area: content;
+}
+
+#scaffolding {
+  @media only screen and (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media only screen and (min-width: 1800px) {
+    max-width: 1500px;
+  }
+}

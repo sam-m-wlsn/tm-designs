@@ -1,0 +1,14 @@
+body {
+  background-color: #efefef;
+  color: #333;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}

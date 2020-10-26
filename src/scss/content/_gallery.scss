@@ -1,0 +1,47 @@
+/* 
+ * Gallery.scss
+ *
+ * Styles responsible for the structure and display of the gallery component.
+ */
+
+#main {
+  margin: 45px 15px 30px;
+}
+
+#gallery {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));;
+    grid-template-rows: auto;
+    grid-gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    position: relative;
+    outline: 4px solid black;
+    overflow: hidden;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  div {
+    position: absolute;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}

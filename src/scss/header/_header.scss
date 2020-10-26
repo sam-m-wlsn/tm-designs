@@ -1,0 +1,15 @@
+@import 'main-menu';
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#site-logo {
+  min-width: 200px;
+
+  img {
+    max-width: 130px;
+  }
+}

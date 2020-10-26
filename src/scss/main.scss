@@ -1,3 +1,7 @@
-body {
-    background: white;
-}
+@import 'utilities/scaffolding';
+@import 'colors';
+@import 'fonts';
+@import 'utilities/utilities';
+@import 'header/header';
+@import 'content/gallery';
+@import 'footer/footer';
