@@ -8,29 +8,29 @@ const paths = {
   src: {
     styles:   'src/scss/**/*.scss',
     scripts:  'src/js/**/*.js',
-    markup:   'src/html/**/*.html'
+    markup:   'src/html/**/*.html',
+    images:   'src/images/**/*.{gif,jpg,png,svg}'
   },
   dest: {
     styles:   'dist/css/',
     scripts:  'dist/js/',
-    markup:   'dist/'
+    markup:   'dist/',
+    images:   'dist/images/'
   }
 }
+const build = parallel(markup, images, scripts, styles);
 
 function markup() {
-  console.log(`Processing Markup => ${paths.src.markup} => ${paths.dest.markup}`);
   return src(paths.src.markup)
   .pipe(dest(paths.dest.markup));
 }
 
 function scripts() {
-  console.log(`Processing Scripts => ${paths.src.scripts} => ${paths.dest.scripts}`);
   return src(paths.src.scripts)
     .pipe(dest(paths.dest.scripts));
 }
 
 function styles() {
-  console.log(`Processing Styles => ${paths.src.styles} => ${paths.dest.styles}`);
   return src(paths.src.styles)
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write('../maps'))
@@ -38,14 +38,12 @@ function styles() {
     .pipe(reload({stream: true}));
 }
 
-function build(cb) {
-  parallel(markup, scripts, styles);
-  cb();
+function images() {
+  return src(paths.src.images)
+    .pipe(dest(paths.dest.images));
 }
 
 function serve(cb) {
-  parallel(build);
-
   browserSync.init({
     server: "./dist"
   });
@@ -58,4 +56,4 @@ function serve(cb) {
 
 exports.serve = serve;
 exports.build = build;
-exports.default = serve;
+exports.default = series(build, serve);
