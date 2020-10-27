@@ -12,6 +12,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
+    "gulp-inject-partials": "^1.0.5",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5"
   }

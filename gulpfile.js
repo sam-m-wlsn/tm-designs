@@ -3,6 +3,7 @@ const browserSync = require('browser-sync').create();
 const sass        = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const reload      = browserSync.reload;
+const injectPartials = require('gulp-inject-partials');
 
 const paths = {
   src: {
@@ -22,6 +23,7 @@ const build = parallel(markup, images, scripts, styles);
 
 function markup() {
   return src(paths.src.markup)
+  .pipe(injectPartials())
   .pipe(dest(paths.dest.markup));
 }
 
