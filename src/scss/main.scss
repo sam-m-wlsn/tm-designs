@@ -1,3 +1,9 @@
+/* 
+ * Main.scss
+ *
+ * This is the root stylesheet responsible for orchestrating the assembly of the other stylesheets.
+ */
+
 @import 'utilities/scaffolding';
 @import 'colors';
 @import 'fonts';
