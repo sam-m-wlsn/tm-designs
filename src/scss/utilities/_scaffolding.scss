@@ -17,12 +17,19 @@ body {
   align-items: stretch;
 }
 
+section {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
 #header {
   grid-area: header;
 }
 
 #content {
   grid-area: content;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #scaffolding {
