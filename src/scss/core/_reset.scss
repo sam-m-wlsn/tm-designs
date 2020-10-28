@@ -1,0 +1,24 @@
+/* 
+ * Reset.scss
+ *
+ * Resets basic styles to create a more uniform base layer.
+ */
+
+ * {
+   box-sizing: border-box;
+ }
+
+ a {
+  text-decoration: none;
+  
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+section {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
