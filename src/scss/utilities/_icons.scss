@@ -1,0 +1,42 @@
+/* 
+ * Icons.scss
+ *
+ * Provides a set of reusable icons.
+ */
+
+.icon {
+  display: inline-block;
+  margin-right: 10px;
+
+  height: 45px;
+  width: 45px;
+
+  &--block {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &--sm {
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+
+  &--lg {
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  $icons: (
+    "instagram": "/images/icon--instagram.svg",
+    "tiktok": "/images/icon--tiktok.svg"
+  );
+
+  @each $name, $path in $icons {
+    &--#{$name}:before {
+      content: url(#{$path});
+    }
+  }
+}

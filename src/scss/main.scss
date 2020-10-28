@@ -4,10 +4,13 @@
  * This is the root stylesheet responsible for orchestrating the assembly of the other stylesheets.
  */
 
-@import 'utilities/scaffolding';
 @import 'colors';
 @import 'fonts';
+
+@import 'utilities/scaffolding';
 @import 'utilities/utilities';
+@import 'utilities/icons';
+
 @import 'header/header';
 @import 'content/gallery';
 @import 'footer/footer';
