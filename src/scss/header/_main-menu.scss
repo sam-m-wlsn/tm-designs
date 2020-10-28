@@ -11,15 +11,19 @@
 .main-menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
 
   &__item {
     height: 45px;
+    display: inline-block;
   }
 
   &__link {
     display: block;
     padding: 15px 45px;
     font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
   }
 }
