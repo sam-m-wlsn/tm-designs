@@ -9,7 +9,7 @@ const paths = {
   src: {
     styles:   'src/scss/**/*.scss',
     scripts:  'src/js/**/*.js',
-    markup:   'src/html/**/*.html',
+    markup:   'src/html/**/*.{html,htm}',
     images:   'src/images/**/*.{gif,jpg,png,svg}'
   },
   dest: {
