@@ -23,7 +23,9 @@ const build = parallel(markup, images, scripts, styles);
 
 function markup() {
   return src(paths.src.markup)
-  .pipe(injectPartials())
+  .pipe(injectPartials({
+    removeTags: true
+  }))
   .pipe(dest(paths.dest.markup));
 }
 
