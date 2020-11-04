@@ -1,0 +1,87 @@
+/* 
+ * Page.scss
+ *
+ * Contains all core page styles.
+ */
+
+
+html {
+  background-image: url("/images/paper-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body{
+  background-color: rgba(#efefef, 0.6);
+}
+
+/* 
+ * HEADER
+ */
+#header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-up(sm) {
+    justify-content: space-between;
+  }
+}
+
+/* 
+ * MAIN-MENU
+ */
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+
+  &__link {
+    display: block;
+    padding: 15px;
+    font-size: 1.2em;
+    display: inline-flex;
+    align-items: center;
+
+    .icon {
+      width: 45px;
+      height: 45px;
+      margin-left:10px;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+/* 
+ * LOGO
+ */
+#site-logo {
+
+  img {
+    max-width: 200px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-width: 200px;
+
+    img {
+      max-width: 175px;
+    }
+  }
+}
+
+/* 
+ * FOOTER
+ */
+#footer {
+  padding: 30px 15px;
+  text-align: right;
+}
