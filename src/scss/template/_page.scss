@@ -6,6 +6,7 @@
 
 
 html {
+  background-color: rgb(177,177,170);
   background-image: url("/images/paper-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -37,20 +38,20 @@ body{
  */
 .main-menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: baseline;
 
   &__link {
     display: block;
     padding: 15px;
-    font-size: 1.2em;
+    font-size: 0.8em;
     display: inline-flex;
     align-items: center;
 
     .icon {
-      width: 45px;
-      height: 45px;
+      width: 30px;
+      height: 30px;
       margin-left:10px;
     }
   }
@@ -58,6 +59,17 @@ body{
   @include media-breakpoint-up(sm) {
     flex-direction: row;
     justify-content: flex-end;
+  }
+
+  @include media-breakpoint-up(md) {
+    &__link {
+      font-size: 1em;
+
+      .icon {
+        width: 42px;
+        height: 42px;
+      }
+    }
   }
 }
 
