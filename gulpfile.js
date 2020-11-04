@@ -34,7 +34,11 @@ function scripts() {
 
 function styles() {
   return src(paths.src.styles)
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass(
+      {
+        outputStyle: 'compressed',
+        includePaths: ['node_modules']
+      }).on('error', sass.logError))
     .pipe(sourcemaps.write('../maps'))
     .pipe(dest(paths.dest.styles))
     .pipe(reload({stream: true}));
