@@ -24,18 +24,19 @@
   }
 
   &--lg {
-    margin-right: 15px;
     width: 60px;
     height: 60px;
+    margin-right: 15px;
   }
 
   $icons: (
-    "instagram": "/images/icon--instagram.svg",
-    "tiktok": "/images/icon--tiktok.svg"
+    "instagram": "/images/icons/instagram.svg",
+    "tiktok": "/images/icons/tiktok.svg",
+    "chevron-down": "/images/icons/chevron-down.svg"
   );
 
   @each $name, $path in $icons {
-    &--#{$name}:before {
+    &--#{$name}::before {
       content: url(#{$path});
     }
   }
