@@ -4,5 +4,10 @@
  * Import orchestrator for bootstrap styles.
  */
 
+//  CORE
 @import 'bootstrap-scss/bootstrap-reboot';
 @import 'bootstrap-scss/bootstrap-grid';
+
+// UTILITIES
+@import 'bootstrap-scss/utilities/screenreaders'
+
