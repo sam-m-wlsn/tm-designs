@@ -6,44 +6,21 @@
 
 body.splash-load {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   z-index: 100;
 
-  #site-logo {
-    position: fixed;
-    z-index: 400;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10%;
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.35057773109243695) 50%, rgba(255,255,255,0) 75%);
-
-    img {
-      display: block;
-      max-width: 50vw;
-      height: auto;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    #site-logo {
-      img {
-        max-width: 20vw;
-      }
-    }
-  }
+  
 }
-body:not(.splash-load) {
-  .marquee--banner {
-    height: 0;
-    overflow: hidden;
-  }
-}
+// body:not(.splash-load) {
+//   .marquee--banner {
+//     height: 0;
+//     overflow: hidden;
+//   }
+// }
 
-.marquee--banner {
+.marquee {
   position: relative;
   transition: height 0.8s ease;
-  z-index: 100;
   height: 100vh;
   width: 100vw;
   background-image: url("/images/gallery/2.jpg");
@@ -51,9 +28,8 @@ body:not(.splash-load) {
   background-position: center;
   overflow: hidden;
 
-  .icon--chevron-down {
+  &__scroll-trigger {
     position: absolute;
-    z-index: 200;
     left: 50%;
     transform: translateX(-50%);
     bottom: 60px;
@@ -64,6 +40,30 @@ body:not(.splash-load) {
     height: 75px;
     box-shadow: 4px 4px 8px black;
     animation: bounce 1s infinite alternate;
+  }
+
+  &__logo{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10%;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0.35057773109243695) 50%, rgba(255,255,255,0) 75%);
+
+    img {
+      display: block;
+      max-width: 50vw;
+      height: auto;
+
+      @include media-breakpoint-up(md) {
+        max-width: 30vw;
+      }
+  
+      @include media-breakpoint-up(xl) {
+        max-width: 20vw;
+      }
+    }
   }
 }
   

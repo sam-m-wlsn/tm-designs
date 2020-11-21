@@ -3,20 +3,22 @@
 <head>
     <!-- partial:partials/_doc-head.htm --><!-- partial -->
 </head>
-<body class="no-js splash-load">
-    <section class="marquee--banner">
-        <a href="#" onclick="document.body.classList.remove('splash-load')"><i class="icon icon--lg icon--chevron-down"></i></a>
-    </section>
-    <!-- partial:partials/_header.htm --><!-- partial -->
-    <main id="content">
-        <!-- <section class="container">
-            <div class="row">
-                <h1>Gallery</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores voluptatum ipsam excepturi sequi architecto hic quisquam, natus ex, saepe accusamus facere non dolores vitae, voluptate neque? Cum enim deleniti culpa.</p>
+<body class="no-js">
+    <div class="scroll__container">
+        <section class="marquee scroll__zone">
+            <div class="marquee__logo">
+                <img itemprop="logo" src="/images/logo.png" alt="JTMonnich Graphics"/>
             </div>
-        </section> -->
-        <!-- partial:partials/_gallery.htm --><!-- partial -->
-    </main>
-    <!-- partial:partials/_footer.htm --><!-- partial -->
+            <a href="#" class="marquee__scroll-trigger" data-splash-trigger><i class="icon icon--lg icon--chevron-down"></i><span class="sr-only">Scroll to content</span></a>
+        </section>
+        <section class="scroll__zone">
+            <!-- partial:partials/_header.htm --><!-- partial -->
+            <main id="content">
+                <!-- partial:partials/_gallery.htm --><!-- partial -->
+            </main>
+            <!-- partial:partials/_footer.htm --><!-- partial -->
+        </section>
+    </div>
+    <!-- partial:partials/_script-includes.htm --><!-- partial -->
 </body>
 </html>
