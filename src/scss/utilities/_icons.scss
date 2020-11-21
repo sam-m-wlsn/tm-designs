@@ -30,9 +30,9 @@
   }
 
   $icons: (
-    "instagram": "/images/icons/instagram.svg",
-    "tiktok": "/images/icons/tiktok.svg",
-    "chevron-down": "/images/icons/chevron-down.svg"
+    "instagram": "images/icons/instagram.svg",
+    "tiktok": "images/icons/tiktok.svg",
+    "chevron-down": "images/icons/chevron-down.svg"
   );
 
   @each $name, $path in $icons {
