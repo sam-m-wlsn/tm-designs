@@ -4,6 +4,7 @@ const sass        = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const reload      = browserSync.reload;
 const injectPartials = require('gulp-inject-partials');
+const babel = require('gulp-babel');
 
 const paths = {
   src: {
@@ -31,6 +32,9 @@ function markup() {
 
 function scripts() {
   return src(paths.src.scripts)
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
     .pipe(dest(paths.dest.scripts));
 }
 
