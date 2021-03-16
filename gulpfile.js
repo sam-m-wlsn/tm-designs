@@ -68,4 +68,4 @@ function serve(cb) {
 
 exports.serve = serve;
 exports.build = build;
-exports.default = series(build, serve);
+exports.default = series(build);
