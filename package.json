@@ -1,6 +1,6 @@
 {
   "name": "tm-designs",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Bare HTML/CSS pass of tylers portfolio site",
   "main": "gulpfile.js",
   "scripts": {
