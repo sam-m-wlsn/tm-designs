@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/sam-m-wlsn/tm-designs/compare/v0.1.0...v0.1.1) (2021-03-16)
+
+
+### Features
+
+* **header:** Add social links. ([2fc852d](https://github.com/sam-m-wlsn/tm-designs/commit/2fc852d6dfa1504e098618c920fe19c2888378fa))
+* **menu:** Open social links in new tab. ([0c6495f](https://github.com/sam-m-wlsn/tm-designs/commit/0c6495f04736130f233b3288440a9d1ab94093dc))
+
+
+### Bug Fixes
+
+* **gallery:** Remove redundant images. ([ed37a01](https://github.com/sam-m-wlsn/tm-designs/commit/ed37a01d0190bcd9d054c91c5aab91318b0c789d))
+* **test:** Clean up tests and resolve scroll issue. ([1efb9f4](https://github.com/sam-m-wlsn/tm-designs/commit/1efb9f4e40df68383b76b6dec90ac6fead59ef85))
+
 ## 0.1.0 (2021-03-16)
 
 
