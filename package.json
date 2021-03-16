@@ -6,7 +6,8 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
-    "test": "gulp & cypress open && fg"
+    "test": "gulp & cypress open && fg",
+    "release": "standard-version"
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +20,8 @@
     "gulp-babel": "^8.0.0",
     "gulp-inject-partials": "^1.0.5",
     "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "standard-version": "^9.1.1"
   },
   "dependencies": {
     "bootstrap-scss": "^4.5.3"
