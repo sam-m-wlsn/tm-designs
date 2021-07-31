@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/sam-m-wlsn/tm-designs/compare/v1.0.0...v1.1.0) (2021-07-31)
+
+
+### Features
+
+* **gallery:** Adds additional images. ([8522fd2](https://github.com/sam-m-wlsn/tm-designs/commit/8522fd20c2c3e2a823010a3a92eb2349b5f70f84))
+
+
+### Bug Fixes
+
+* **gallery:** Adjust thumbnail height to reduce empty space inside frame. ([fb0c968](https://github.com/sam-m-wlsn/tm-designs/commit/fb0c968f132a95bd355fffea153db71a33baa999))
+
 ## [1.0.0](https://github.com/sam-m-wlsn/tm-designs/compare/v0.1.1...v1.0.0) (2021-03-16)
 
 ### [0.1.1](https://github.com/sam-m-wlsn/tm-designs/compare/v0.1.0...v0.1.1) (2021-03-16)
